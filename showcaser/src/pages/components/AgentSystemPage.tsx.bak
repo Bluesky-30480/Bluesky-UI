@@ -1,0 +1,196 @@
+import BUI from '@bluesky-ui/ui'
+import { ComponentPreview } from '../../components/docs/ComponentPreview'
+import { PageHeader } from '../../components/docs/PageHeader'
+import { Section } from '../../components/docs/Section'
+
+export default function AgentSystemPage() {
+  return (
+    <BUI.Stack spacing="xl">
+      <PageHeader 
+        title="Agent System" 
+        description="Comprehensive components for building agent dashboards, monitoring, and tooling." 
+      />
+
+      <Section title="Agent Panel & Card">
+        <ComponentPreview>
+          <BUI.HStack spacing="lg" align="start">
+            <BUI.AgentPanel className="w-72">
+              <BUI.HStack spacing="md" align="center" className="p-4">
+                <BUI.AgentAvatar name="Atlas" status="active" />
+                <BUI.Stack spacing="xs">
+                  <BUI.Text weight="semibold">Atlas Agent</BUI.Text>
+                  <BUI.AgentStatus status="Running" />
+                </BUI.Stack>
+              </BUI.HStack>
+            </BUI.AgentPanel>
+            <BUI.AgentCard
+              name="Nova"
+              description="Data processing agent"
+              status="idle"
+              className="w-64"
+            />
+          </BUI.HStack>
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Agent Avatar & Status">
+        <ComponentPreview>
+          <BUI.HStack spacing="lg" align="center">
+            <BUI.AgentAvatar name="Alpha" status="active" />
+            <BUI.AgentAvatar name="Beta" status="idle" />
+            <BUI.AgentAvatar name="Gamma" status="error" />
+            <BUI.Divider orientation="vertical" className="h-10" />
+            <BUI.AgentStatus status="Running" />
+            <BUI.AgentStatus status="Idle" />
+            <BUI.AgentStatus status="Error" />
+            <BUI.AgentStatus status="Completed" />
+          </BUI.HStack>
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Agent Task List">
+        <ComponentPreview>
+          <BUI.AgentTaskList className="max-w-md">
+            <BUI.AgentTaskItem status="completed">Initialize environment</BUI.AgentTaskItem>
+            <BUI.AgentTaskItem status="completed">Load configuration</BUI.AgentTaskItem>
+            <BUI.AgentTaskItem status="in-progress">Process data batch</BUI.AgentTaskItem>
+            <BUI.AgentTaskItem status="pending">Generate report</BUI.AgentTaskItem>
+            <BUI.AgentTaskItem status="pending">Send notifications</BUI.AgentTaskItem>
+          </BUI.AgentTaskList>
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Memory Viewer">
+        <ComponentPreview>
+          <BUI.AgentMemoryViewer 
+            className="max-w-lg h-48"
+            entries={[
+              { key: 'user_context', value: { name: 'John', preferences: ['dark mode'] }, timestamp: new Date() },
+              { key: 'session_data', value: { id: 'sess_123', active: true }, timestamp: new Date() },
+              { key: 'last_action', value: 'query_database', timestamp: new Date() },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Log Viewer">
+        <ComponentPreview>
+          <BUI.AgentLogViewer 
+            className="max-w-2xl h-48"
+            logs={[
+              { level: 'info', message: 'Agent started successfully', timestamp: new Date() },
+              { level: 'debug', message: 'Loading model weights...', timestamp: new Date() },
+              { level: 'info', message: 'Model loaded in 2.3s', timestamp: new Date() },
+              { level: 'warn', message: 'Memory usage above 80%', timestamp: new Date() },
+              { level: 'error', message: 'Connection timeout to external API', timestamp: new Date() },
+              { level: 'info', message: 'Retry successful', timestamp: new Date() },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Chain Graph">
+        <ComponentPreview>
+          <BUI.AgentChainGraph 
+            className="w-full h-64"
+            nodes={[
+              { id: '1', label: 'Input', type: 'input' },
+              { id: '2', label: 'LLM Call', type: 'llm' },
+              { id: '3', label: 'Tool: Search', type: 'tool' },
+              { id: '4', label: 'LLM Call', type: 'llm' },
+              { id: '5', label: 'Output', type: 'output' },
+            ]}
+            edges={[
+              { from: '1', to: '2' },
+              { from: '2', to: '3' },
+              { from: '3', to: '4' },
+              { from: '4', to: '5' },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Tool Invocation View">
+        <ComponentPreview>
+          <BUI.ToolInvocationView 
+            className="max-w-lg"
+            tool="web_search"
+            input={{ query: 'latest AI news', limit: 5 }}
+            output={{ results: ['Result 1', 'Result 2', 'Result 3'] }}
+            duration={1250}
+            status="success"
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Reasoning Trace View">
+        <ComponentPreview>
+          <BUI.ReasoningTraceView 
+            className="max-w-2xl"
+            steps={[
+              { type: 'thought', content: 'The user is asking about weather. I should use the weather API.' },
+              { type: 'action', content: 'Calling weather_api with location="New York"' },
+              { type: 'observation', content: 'Temperature: 72°F, Conditions: Partly cloudy' },
+              { type: 'thought', content: 'I have the weather data. I can now respond to the user.' },
+              { type: 'response', content: 'The weather in New York is 72°F and partly cloudy.' },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Permission Editor">
+        <ComponentPreview>
+          <BUI.AgentPermissionEditor 
+            className="max-w-md"
+            permissions={[
+              { id: 'read_files', name: 'Read Files', enabled: true, description: 'Allow reading local files' },
+              { id: 'write_files', name: 'Write Files', enabled: false, description: 'Allow writing local files' },
+              { id: 'network', name: 'Network Access', enabled: true, description: 'Allow internet access' },
+              { id: 'execute', name: 'Execute Code', enabled: false, description: 'Allow code execution' },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Persona Editor">
+        <ComponentPreview>
+          <BUI.AgentPersonaEditor 
+            className="max-w-md"
+            persona={{
+              name: 'Assistant',
+              description: 'A helpful AI assistant',
+              systemPrompt: 'You are a helpful assistant...',
+              tone: 'professional',
+              creativity: 0.7,
+            }}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Template Store">
+        <ComponentPreview>
+          <BUI.AgentTemplateStore 
+            className="max-w-2xl"
+            templates={[
+              { id: '1', name: 'Customer Support', description: 'Handle support tickets', category: 'support' },
+              { id: '2', name: 'Code Review', description: 'Review pull requests', category: 'development' },
+              { id: '3', name: 'Data Analysis', description: 'Analyze datasets', category: 'analytics' },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+
+      <Section title="Testing Console">
+        <ComponentPreview>
+          <BUI.AgentTestingConsole 
+            className="max-w-2xl h-64"
+            testCases={[
+              { id: '1', name: 'Basic greeting', input: 'Hello', expectedOutput: 'Hi there!' },
+              { id: '2', name: 'Weather query', input: 'What is the weather?', expectedOutput: null },
+            ]}
+          />
+        </ComponentPreview>
+      </Section>
+    </BUI.Stack>
+  )
+}

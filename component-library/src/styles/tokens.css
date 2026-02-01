@@ -1,0 +1,756 @@
+/* Bluesky UI - Design Tokens */
+
+/* Default theme (Blue) */
+:root,
+[data-theme="blue"] {
+  /* Primary colors */
+  --primary: 217 91% 60%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary colors */
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+
+  /* Background colors */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  /* Surface colors */
+  --surface: 217 33% 15%;
+  --elevated: 217 33% 18%;
+  --overlay: 217 33% 12%;
+
+  /* Muted colors */
+  --muted: 217 33% 25%;
+  --muted-foreground: 215 20% 65%;
+
+  /* Accent colors */
+  --accent: 217 91% 60%;
+  --accent-foreground: 0 0% 100%;
+
+  /* Border colors */
+  --border: 217 33% 25%;
+  --input: 217 33% 25%;
+  --ring: 217 91% 60%;
+
+  /* Semantic colors */
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+  --info: 199 89% 48%;
+
+  /* === EFFECTS SYSTEM === */
+  /* Shadows - can be customized per theme */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Glows - default to none, themes can override */
+  --glow-sm: none;
+  --glow-md: none;
+  --glow-lg: none;
+  --glow-primary: none;
+  --glow-accent: none;
+  --glow-success: none;
+  --glow-error: none;
+  --glow-warning: none;
+
+  /* Gradients - default to solid fallbacks */
+  --gradient-primary: hsl(var(--primary));
+  --gradient-accent: hsl(var(--accent));
+  --gradient-surface: hsl(var(--surface));
+  --gradient-text: hsl(var(--foreground));
+
+  /* Background effects - animated blobs/orbs */
+  --bg-blob-1: hsl(217 91% 60% / 0.15);
+  --bg-blob-2: hsl(199 89% 48% / 0.15);
+  --bg-blob-3: hsl(142 76% 36% / 0.1);
+  --bg-grid-color: hsl(var(--border) / 0.3);
+  --bg-noise-opacity: 0.03;
+
+  /* Effect intensities - themes can scale effects */
+  --effect-intensity: 1;
+}
+
+/* Black theme */
+[data-theme="black"] {
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+
+  --secondary: 0 0% 15%;
+  --secondary-foreground: 0 0% 98%;
+
+  --background: 0 0% 4%;
+  --foreground: 0 0% 98%;
+
+  --surface: 0 0% 8%;
+  --elevated: 0 0% 12%;
+  --overlay: 0 0% 6%;
+
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 60%;
+
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 0%;
+
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 0 0% 100%;
+
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+  --info: 199 89% 48%;
+}
+
+/* Green theme */
+[data-theme="green"] {
+  --primary: 142 76% 36%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 140 30% 15%;
+  --secondary-foreground: 140 20% 98%;
+
+  --background: 140 30% 8%;
+  --foreground: 140 20% 98%;
+
+  --surface: 140 25% 12%;
+  --elevated: 140 25% 15%;
+  --overlay: 140 25% 10%;
+
+  --muted: 140 20% 22%;
+  --muted-foreground: 140 15% 60%;
+
+  --accent: 142 76% 36%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 140 20% 22%;
+  --input: 140 20% 22%;
+  --ring: 142 76% 36%;
+
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+  --info: 199 89% 48%;
+}
+
+/* Orange theme */
+[data-theme="orange"] {
+  --primary: 24 95% 53%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 24 30% 15%;
+  --secondary-foreground: 24 20% 98%;
+
+  --background: 24 30% 8%;
+  --foreground: 24 20% 98%;
+
+  --surface: 24 25% 12%;
+  --elevated: 24 25% 15%;
+  --overlay: 24 25% 10%;
+
+  --muted: 24 20% 22%;
+  --muted-foreground: 24 15% 60%;
+
+  --accent: 24 95% 53%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 24 20% 22%;
+  --input: 24 20% 22%;
+  --ring: 24 95% 53%;
+
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+  --info: 199 89% 48%;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --primary: 217 91% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 220 9% 46%;
+
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+
+  --surface: 220 14% 98%;
+  --elevated: 0 0% 100%;
+  --overlay: 220 14% 96%;
+
+  --muted: 220 14% 92%;
+  --muted-foreground: 220 9% 46%;
+
+  --accent: 217 91% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 220 13% 88%;
+  --input: 220 13% 88%;
+  --ring: 217 91% 50%;
+
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+  --info: 199 89% 48%;
+}
+
+/* Aurora theme - Blue to Green gradient with glow effects */
+[data-theme="aurora"] {
+  --primary: 170 80% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 190 40% 15%;
+  --secondary-foreground: 170 30% 98%;
+
+  --background: 200 50% 6%;
+  --foreground: 170 30% 98%;
+
+  --surface: 195 45% 10%;
+  --elevated: 190 40% 14%;
+  --overlay: 200 45% 8%;
+
+  --muted: 190 30% 20%;
+  --muted-foreground: 180 20% 60%;
+
+  --accent: 160 75% 45%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 185 35% 22%;
+  --input: 185 35% 22%;
+  --ring: 170 80% 50%;
+
+  --success: 160 75% 40%;
+  --warning: 45 95% 55%;
+  --error: 0 80% 55%;
+  --info: 200 90% 55%;
+
+  /* Aurora glows */
+  --glow-sm: 0 0 8px hsl(170 80% 50% / 0.3);
+  --glow-md: 0 0 15px hsl(170 80% 50% / 0.4), 0 0 30px hsl(200 80% 50% / 0.2);
+  --glow-lg: 0 0 20px hsl(170 80% 50% / 0.5), 0 0 40px hsl(200 80% 50% / 0.3);
+  --glow-primary: 0 0 20px hsl(170 80% 50% / 0.5), 0 0 40px hsl(200 80% 50% / 0.3);
+  --glow-accent: 0 0 15px hsl(160 75% 45% / 0.5), 0 0 30px hsl(180 70% 45% / 0.3);
+  --glow-success: 0 0 15px hsl(160 75% 40% / 0.5);
+  --glow-error: 0 0 15px hsl(0 80% 55% / 0.5);
+  --glow-warning: 0 0 15px hsl(45 95% 55% / 0.5);
+
+  /* Aurora gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(200 80% 50%), hsl(170 80% 50%));
+  --gradient-accent: linear-gradient(135deg, hsl(170 80% 50%), hsl(160 75% 45%));
+  --gradient-surface: linear-gradient(180deg, hsl(195 45% 12%), hsl(200 50% 8%));
+  --gradient-text: linear-gradient(135deg, hsl(200 80% 60%), hsl(160 75% 50%));
+
+  /* Enhanced shadows with color */
+  --shadow-sm: 0 1px 2px hsl(200 50% 10% / 0.3);
+  --shadow-md: 0 4px 12px hsl(190 50% 10% / 0.4);
+  --shadow-lg: 0 8px 24px hsl(190 50% 10% / 0.5);
+  --shadow-xl: 0 16px 48px hsl(190 50% 10% / 0.6);
+
+  /* Aurora background effects */
+  --bg-blob-1: hsl(170 80% 50% / 0.2);
+  --bg-blob-2: hsl(200 80% 50% / 0.15);
+  --bg-blob-3: hsl(160 75% 45% / 0.1);
+  --bg-grid-color: hsl(185 35% 30% / 0.2);
+  --bg-noise-opacity: 0.02;
+}
+
+/* ================================================
+   NEON PURPLE THEME - Cyberpunk-inspired with intense glows
+   ================================================ */
+[data-theme="neon-purple"] {
+  --primary: 270 90% 60%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 280 40% 15%;
+  --secondary-foreground: 270 30% 95%;
+
+  --background: 280 50% 5%;
+  --foreground: 270 30% 95%;
+
+  --surface: 275 45% 10%;
+  --elevated: 270 40% 14%;
+  --overlay: 280 45% 8%;
+
+  --muted: 275 35% 20%;
+  --muted-foreground: 270 20% 60%;
+
+  --accent: 320 85% 55%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 275 40% 22%;
+  --input: 275 40% 22%;
+  --ring: 270 90% 60%;
+
+  --success: 150 80% 45%;
+  --warning: 45 95% 55%;
+  --error: 350 85% 55%;
+  --info: 200 90% 55%;
+
+  /* Neon glows - intense purple/pink */
+  --glow-sm: 0 0 10px hsl(270 90% 60% / 0.4), 0 0 20px hsl(270 90% 60% / 0.2);
+  --glow-md: 0 0 20px hsl(270 90% 60% / 0.5), 0 0 40px hsl(320 85% 55% / 0.3);
+  --glow-lg: 0 0 30px hsl(270 90% 60% / 0.6), 0 0 60px hsl(320 85% 55% / 0.4);
+  --glow-primary: 0 0 25px hsl(270 90% 60% / 0.6), 0 0 50px hsl(270 90% 60% / 0.3);
+  --glow-accent: 0 0 20px hsl(320 85% 55% / 0.6), 0 0 40px hsl(320 85% 55% / 0.3);
+  --glow-success: 0 0 15px hsl(150 80% 45% / 0.5);
+  --glow-error: 0 0 15px hsl(350 85% 55% / 0.5);
+  --glow-warning: 0 0 15px hsl(45 95% 55% / 0.5);
+
+  /* Neon gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(270 90% 60%), hsl(320 85% 55%));
+  --gradient-accent: linear-gradient(135deg, hsl(320 85% 55%), hsl(350 80% 60%));
+  --gradient-surface: linear-gradient(180deg, hsl(275 45% 12%), hsl(280 50% 6%));
+  --gradient-text: linear-gradient(135deg, hsl(270 90% 70%), hsl(320 85% 65%));
+
+  /* Colored shadows */
+  --shadow-sm: 0 2px 4px hsl(270 50% 5% / 0.4);
+  --shadow-md: 0 4px 12px hsl(270 50% 5% / 0.5);
+  --shadow-lg: 0 8px 24px hsl(270 50% 5% / 0.6);
+  --shadow-xl: 0 16px 48px hsl(270 50% 5% / 0.7);
+
+  /* Background effects */
+  --bg-blob-1: hsl(270 90% 60% / 0.2);
+  --bg-blob-2: hsl(320 85% 55% / 0.15);
+  --bg-blob-3: hsl(350 80% 60% / 0.1);
+  --bg-grid-color: hsl(270 40% 30% / 0.25);
+  --bg-noise-opacity: 0.03;
+}
+
+/* ================================================
+   SUNSET THEME - Warm orange to pink gradient effects
+   ================================================ */
+[data-theme="sunset"] {
+  --primary: 20 95% 55%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 15 40% 15%;
+  --secondary-foreground: 20 30% 95%;
+
+  --background: 15 45% 6%;
+  --foreground: 20 30% 95%;
+
+  --surface: 12 40% 10%;
+  --elevated: 15 38% 14%;
+  --overlay: 12 42% 8%;
+
+  --muted: 15 35% 20%;
+  --muted-foreground: 20 20% 60%;
+
+  --accent: 340 80% 55%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 15 35% 22%;
+  --input: 15 35% 22%;
+  --ring: 20 95% 55%;
+
+  --success: 145 75% 40%;
+  --warning: 45 95% 55%;
+  --error: 0 85% 55%;
+  --info: 200 85% 55%;
+
+  /* Sunset glows - warm orange/pink */
+  --glow-sm: 0 0 10px hsl(20 95% 55% / 0.4), 0 0 20px hsl(340 80% 55% / 0.2);
+  --glow-md: 0 0 20px hsl(20 95% 55% / 0.5), 0 0 40px hsl(340 80% 55% / 0.3);
+  --glow-lg: 0 0 30px hsl(20 95% 55% / 0.6), 0 0 60px hsl(340 80% 55% / 0.4);
+  --glow-primary: 0 0 25px hsl(20 95% 55% / 0.6), 0 0 50px hsl(30 90% 50% / 0.3);
+  --glow-accent: 0 0 20px hsl(340 80% 55% / 0.6), 0 0 40px hsl(320 75% 50% / 0.3);
+  --glow-success: 0 0 15px hsl(145 75% 40% / 0.5);
+  --glow-error: 0 0 15px hsl(0 85% 55% / 0.5);
+  --glow-warning: 0 0 15px hsl(45 95% 55% / 0.5);
+
+  /* Sunset gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(30 95% 55%), hsl(20 95% 55%), hsl(340 80% 55%));
+  --gradient-accent: linear-gradient(135deg, hsl(340 80% 55%), hsl(320 75% 55%));
+  --gradient-surface: linear-gradient(180deg, hsl(15 40% 12%), hsl(12 45% 7%));
+  --gradient-text: linear-gradient(135deg, hsl(30 95% 65%), hsl(340 80% 60%));
+
+  /* Warm shadows */
+  --shadow-sm: 0 2px 4px hsl(15 40% 5% / 0.4);
+  --shadow-md: 0 4px 12px hsl(15 40% 5% / 0.5);
+  --shadow-lg: 0 8px 24px hsl(15 40% 5% / 0.6);
+  --shadow-xl: 0 16px 48px hsl(15 40% 5% / 0.7);
+
+  /* Background effects */
+  --bg-blob-1: hsl(20 95% 55% / 0.2);
+  --bg-blob-2: hsl(340 80% 55% / 0.15);
+  --bg-blob-3: hsl(30 90% 50% / 0.1);
+  --bg-grid-color: hsl(15 35% 30% / 0.2);
+  --bg-noise-opacity: 0.02;
+}
+
+/* ================================================
+   OCEAN THEME - Deep blue with aqua accents
+   ================================================ */
+[data-theme="ocean"] {
+  --primary: 200 90% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 50% 15%;
+  --secondary-foreground: 200 30% 95%;
+
+  --background: 215 55% 6%;
+  --foreground: 200 30% 95%;
+
+  --surface: 210 50% 10%;
+  --elevated: 205 48% 14%;
+  --overlay: 215 52% 8%;
+
+  --muted: 210 40% 20%;
+  --muted-foreground: 200 25% 60%;
+
+  --accent: 175 85% 45%;
+  --accent-foreground: 0 0% 100%;
+
+  --border: 210 40% 22%;
+  --input: 210 40% 22%;
+  --ring: 200 90% 50%;
+
+  --success: 160 80% 45%;
+  --warning: 45 95% 55%;
+  --error: 0 80% 55%;
+  --info: 195 95% 55%;
+
+  /* Ocean glows - deep blue/aqua */
+  --glow-sm: 0 0 10px hsl(200 90% 50% / 0.4), 0 0 20px hsl(175 85% 45% / 0.2);
+  --glow-md: 0 0 20px hsl(200 90% 50% / 0.5), 0 0 40px hsl(175 85% 45% / 0.3);
+  --glow-lg: 0 0 30px hsl(200 90% 50% / 0.6), 0 0 60px hsl(175 85% 45% / 0.4);
+  --glow-primary: 0 0 25px hsl(200 90% 50% / 0.6), 0 0 50px hsl(210 85% 55% / 0.3);
+  --glow-accent: 0 0 20px hsl(175 85% 45% / 0.6), 0 0 40px hsl(160 80% 45% / 0.3);
+  --glow-success: 0 0 15px hsl(160 80% 45% / 0.5);
+  --glow-error: 0 0 15px hsl(0 80% 55% / 0.5);
+  --glow-warning: 0 0 15px hsl(45 95% 55% / 0.5);
+
+  /* Ocean gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(210 90% 55%), hsl(200 90% 50%), hsl(175 85% 45%));
+  --gradient-accent: linear-gradient(135deg, hsl(175 85% 45%), hsl(160 80% 45%));
+  --gradient-surface: linear-gradient(180deg, hsl(210 50% 12%), hsl(215 55% 7%));
+  --gradient-text: linear-gradient(135deg, hsl(200 90% 60%), hsl(175 85% 55%));
+
+  /* Deep shadows */
+  --shadow-sm: 0 2px 4px hsl(215 50% 5% / 0.5);
+  --shadow-md: 0 4px 12px hsl(215 50% 5% / 0.6);
+  --shadow-lg: 0 8px 24px hsl(215 50% 5% / 0.7);
+  --shadow-xl: 0 16px 48px hsl(215 50% 5% / 0.8);
+
+  /* Background effects */
+  --bg-blob-1: hsl(200 90% 50% / 0.2);
+  --bg-blob-2: hsl(175 85% 45% / 0.15);
+  --bg-blob-3: hsl(210 85% 55% / 0.1);
+  --bg-grid-color: hsl(210 40% 30% / 0.2);
+  --bg-noise-opacity: 0.02;
+}
+
+/* ================================================
+   FOREST THEME - Rich greens with golden accents
+   ================================================ */
+[data-theme="forest"] {
+  --primary: 140 70% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 135 40% 12%;
+  --secondary-foreground: 140 25% 95%;
+
+  --background: 135 45% 5%;
+  --foreground: 140 25% 95%;
+
+  --surface: 138 42% 9%;
+  --elevated: 135 40% 12%;
+  --overlay: 138 44% 7%;
+
+  --muted: 135 35% 18%;
+  --muted-foreground: 140 20% 55%;
+
+  --accent: 45 90% 50%;
+  --accent-foreground: 0 0% 10%;
+
+  --border: 135 35% 20%;
+  --input: 135 35% 20%;
+  --ring: 140 70% 40%;
+
+  --success: 145 75% 38%;
+  --warning: 45 95% 55%;
+  --error: 0 80% 55%;
+  --info: 195 85% 50%;
+
+  /* Forest glows - green/gold */
+  --glow-sm: 0 0 10px hsl(140 70% 40% / 0.4), 0 0 20px hsl(45 90% 50% / 0.2);
+  --glow-md: 0 0 20px hsl(140 70% 40% / 0.5), 0 0 40px hsl(45 90% 50% / 0.3);
+  --glow-lg: 0 0 30px hsl(140 70% 40% / 0.6), 0 0 60px hsl(45 90% 50% / 0.4);
+  --glow-primary: 0 0 25px hsl(140 70% 40% / 0.6), 0 0 50px hsl(150 65% 45% / 0.3);
+  --glow-accent: 0 0 20px hsl(45 90% 50% / 0.6), 0 0 40px hsl(50 85% 50% / 0.3);
+  --glow-success: 0 0 15px hsl(145 75% 38% / 0.5);
+  --glow-error: 0 0 15px hsl(0 80% 55% / 0.5);
+  --glow-warning: 0 0 15px hsl(45 95% 55% / 0.5);
+
+  /* Forest gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(150 65% 45%), hsl(140 70% 40%), hsl(130 65% 35%));
+  --gradient-accent: linear-gradient(135deg, hsl(45 90% 50%), hsl(50 85% 55%));
+  --gradient-surface: linear-gradient(180deg, hsl(138 42% 11%), hsl(135 45% 6%));
+  --gradient-text: linear-gradient(135deg, hsl(140 70% 50%), hsl(45 90% 55%));
+
+  /* Natural shadows */
+  --shadow-sm: 0 2px 4px hsl(135 40% 4% / 0.5);
+  --shadow-md: 0 4px 12px hsl(135 40% 4% / 0.6);
+  --shadow-lg: 0 8px 24px hsl(135 40% 4% / 0.7);
+  --shadow-xl: 0 16px 48px hsl(135 40% 4% / 0.8);
+
+  /* Background effects */
+  --bg-blob-1: hsl(140 70% 40% / 0.2);
+  --bg-blob-2: hsl(45 90% 50% / 0.12);
+  --bg-blob-3: hsl(150 65% 45% / 0.1);
+  --bg-grid-color: hsl(135 35% 25% / 0.2);
+  --bg-noise-opacity: 0.03;
+}
+
+/* Radius options */
+[data-radius="none"] {
+  --radius: 0;
+}
+
+[data-radius="sm"] {
+  --radius: 0.25rem;
+}
+
+[data-radius="md"] {
+  --radius: 0.5rem;
+}
+
+[data-radius="lg"] {
+  --radius: 0.75rem;
+}
+
+[data-radius="full"] {
+  --radius: 9999px;
+}
+
+/* ================================================
+   EFFECT UTILITY CLASSES
+   These use the theme tokens - any theme can customize them
+   ================================================ */
+
+/* Shadow utilities */
+.shadow-theme-sm { box-shadow: var(--shadow-sm); }
+.shadow-theme-md { box-shadow: var(--shadow-md); }
+.shadow-theme-lg { box-shadow: var(--shadow-lg); }
+.shadow-theme-xl { box-shadow: var(--shadow-xl); }
+
+/* Glow utilities */
+.glow-sm { box-shadow: var(--glow-sm); }
+.glow-md { box-shadow: var(--glow-md); }
+.glow-lg { box-shadow: var(--glow-lg); }
+.glow-primary { box-shadow: var(--glow-primary); }
+.glow-accent { box-shadow: var(--glow-accent); }
+.glow-success { box-shadow: var(--glow-success); }
+.glow-error { box-shadow: var(--glow-error); }
+.glow-warning { box-shadow: var(--glow-warning); }
+
+/* Gradient backgrounds */
+.bg-gradient-primary { background: var(--gradient-primary); }
+.bg-gradient-accent { background: var(--gradient-accent); }
+.bg-gradient-surface { background: var(--gradient-surface); }
+
+/* Gradient text */
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Combined effects for interactive elements */
+.effect-glow-on-hover {
+  transition: box-shadow 0.2s ease;
+}
+.effect-glow-on-hover:hover {
+  box-shadow: var(--glow-md);
+}
+
+.effect-glow-on-focus:focus-visible {
+  box-shadow: var(--glow-primary);
+}
+
+/* ================================================
+   BACKGROUND EFFECTS
+   Animated blobs, grids, and noise patterns
+   ================================================ */
+
+/* Background container with effects */
+.bg-effects {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-effects::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 50% at 20% 20%, var(--bg-blob-1), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 80%, var(--bg-blob-2), transparent),
+    radial-gradient(ellipse 50% 50% at 50% 50%, var(--bg-blob-3), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Animated floating blobs */
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: blob-float 20s ease-in-out infinite;
+}
+
+.bg-blob-1 {
+  width: 600px;
+  height: 600px;
+  background: var(--bg-blob-1);
+  top: -200px;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.bg-blob-2 {
+  width: 500px;
+  height: 500px;
+  background: var(--bg-blob-2);
+  bottom: -150px;
+  right: -150px;
+  animation-delay: -7s;
+}
+
+.bg-blob-3 {
+  width: 400px;
+  height: 400px;
+  background: var(--bg-blob-3);
+  top: 40%;
+  left: 30%;
+  animation-delay: -14s;
+}
+
+@keyframes blob-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(0.95);
+  }
+  75% {
+    transform: translate(40px, 20px) scale(1.05);
+  }
+}
+
+/* Grid pattern background */
+.bg-grid {
+  position: relative;
+}
+
+.bg-grid::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(var(--bg-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid-color) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black, transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dot pattern background */
+.bg-dots {
+  position: relative;
+}
+
+.bg-dots::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--bg-grid-color) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Noise texture overlay */
+.bg-noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: var(--bg-noise-opacity);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Gradient mesh background */
+.bg-mesh {
+  background: 
+    radial-gradient(at 40% 20%, var(--bg-blob-1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, var(--bg-blob-2) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, var(--bg-blob-3) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, var(--bg-blob-1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, var(--bg-blob-2) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, var(--bg-blob-3) 0px, transparent 50%);
+}
+
+/* Floating animation for elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Pulse glow animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: var(--glow-md);
+  }
+  50% {
+    box-shadow: var(--glow-lg);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Gradient shift animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}

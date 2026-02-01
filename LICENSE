@@ -1,0 +1,46 @@
+MIT License with Attribution Requirement
+
+Copyright (c) 2026 Bluesky-30480
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+2. ATTRIBUTION REQUIREMENT: Any application, website, or project that uses this
+   Software must include visible attribution to the original author. This can be
+   done in one of the following ways:
+   
+   a) Include "Built with Bluesky UI by Bluesky-30480" in the application's 
+      footer, about page, or credits section.
+   
+   b) Include a comment in the source code referencing the original repository:
+      // UI Components powered by Bluesky UI (https://github.com/bluesky-30480/Bluesky-UI)
+   
+   c) Include attribution in the project's README or documentation.
+
+3. The name "Bluesky UI" and the author's name "Bluesky-30480" may not be used
+   to endorse or promote products derived from this software without specific
+   prior written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Summary:
+✅ Free to use for personal and commercial projects
+✅ Free to modify and distribute
+✅ Free to sublicense
+⚠️ Must give credit to Bluesky-30480 as the original creator
+⚠️ Must include this license in copies of the software

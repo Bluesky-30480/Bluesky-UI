@@ -1,0 +1,135 @@
+/* Tokens must be imported before Tailwind */
+@import '../../../component-library/src/styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base layer overrides */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: font-size 0.2s ease;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Reduced motion preference */
+  html.reduce-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Showcaser-specific styles */
+.showcaser-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 64px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.showcaser-header {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid hsl(var(--border));
+  flex-shrink: 0;
+}
+
+.showcaser-sidebar {
+  border-right: 1px solid hsl(var(--border));
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.showcaser-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+/* Custom scrollbar styling */
+.showcaser-sidebar::-webkit-scrollbar,
+.showcaser-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.showcaser-sidebar::-webkit-scrollbar-track,
+.showcaser-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.showcaser-sidebar::-webkit-scrollbar-thumb,
+.showcaser-content::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+.showcaser-sidebar::-webkit-scrollbar-thumb:hover,
+.showcaser-content::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--border));
+}
+
+/* Code block styling */
+.code-block {
+  background: hsl(var(--surface));
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+}
+
+/* Component preview */
+.component-preview {
+  background: hsl(var(--surface));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* Props table */
+.props-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.props-table th,
+.props-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.props-table th {
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+}
+
+.props-table code {
+  background: hsl(var(--muted));
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}

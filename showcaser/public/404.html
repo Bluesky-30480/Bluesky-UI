@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bluesky UI</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Redirects all 404s to index.html with the path preserved in sessionStorage
+      const path = window.location.pathname;
+      const base = '/Bluesky-UI';
+      sessionStorage.setItem('redirect', path.replace(base, '') || '/');
+      window.location.replace(base + '/');
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>

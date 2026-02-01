@@ -1,0 +1,298 @@
+# Third-Party Licenses
+
+This file contains the licenses of all third-party dependencies used in the 
+Bluesky UI component library and showcaser application.
+
+================================================================================
+
+## React
+https://github.com/facebook/react
+License: MIT License
+Copyright (c) Meta Platforms, Inc. and affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+================================================================================
+
+## React DOM
+https://github.com/facebook/react
+License: MIT License
+Copyright (c) Meta Platforms, Inc. and affiliates.
+
+(Same MIT license as React above)
+
+================================================================================
+
+## React Router
+https://github.com/remix-run/react-router
+License: MIT License
+Copyright (c) React Training LLC 2015-2019
+Copyright (c) Remix Software Inc. 2020-2021
+Copyright (c) Shopify Inc. 2022-2023
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## TypeScript
+https://github.com/microsoft/TypeScript
+License: Apache License 2.0
+Copyright (c) Microsoft Corporation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+================================================================================
+
+## Vite
+https://github.com/vitejs/vite
+License: MIT License
+Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## Tailwind CSS
+https://github.com/tailwindlabs/tailwindcss
+License: MIT License
+Copyright (c) Tailwind Labs, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## PostCSS
+https://github.com/postcss/postcss
+License: MIT License
+Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## Autoprefixer
+https://github.com/postcss/autoprefixer
+License: MIT License
+Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+
+(Same MIT license as PostCSS above)
+
+================================================================================
+
+## Lucide React (Icons)
+https://github.com/lucide-icons/lucide
+License: ISC License
+Copyright (c) 2020, Lucide Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES.
+
+================================================================================
+
+## Zustand (State Management)
+https://github.com/pmndrs/zustand
+License: MIT License
+Copyright (c) 2019 Paul Henschel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## clsx (Class Name Utility)
+https://github.com/lukeed/clsx
+License: MIT License
+Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## tailwind-merge
+https://github.com/dcastil/tailwind-merge
+License: MIT License
+Copyright (c) 2021 Dany Castillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## class-variance-authority (CVA)
+https://github.com/joe-bell/cva
+License: Apache License 2.0
+Copyright (c) 2022 Joe Bell
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+
+================================================================================
+
+## pnpm (Package Manager)
+https://github.com/pnpm/pnpm
+License: MIT License
+Copyright (c) 2015-present pnpm contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## ESLint
+https://github.com/eslint/eslint
+License: MIT License
+Copyright OpenJS Foundation and other contributors, <www.openjsf.org>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## Prettier
+https://github.com/prettier/prettier
+License: MIT License
+Copyright © James Long and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## @radix-ui/react-* (Radix Primitives)
+https://github.com/radix-ui/primitives
+License: MIT License
+Copyright (c) 2022 WorkOS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## Framer Motion
+https://github.com/framer/motion
+License: MIT License
+Copyright (c) 2018 Framer B.V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## date-fns
+https://github.com/date-fns/date-fns
+License: MIT License
+Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## react-virtualized-auto-sizer
+https://github.com/bvaughn/react-virtualized-auto-sizer
+License: MIT License
+Copyright (c) 2019 bvaughn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+## react-window
+https://github.com/bvaughn/react-window
+License: MIT License
+Copyright (c) 2018 bvaughn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+================================================================================
+
+---
+
+## Summary
+
+All dependencies used in this project are licensed under open-source licenses
+(MIT, Apache 2.0, or ISC) that permit:
+- Commercial use
+- Modification
+- Distribution
+- Private use
+
+The main requirements across all these licenses are:
+1. Include the original copyright notice
+2. Include the license text
+
+This THIRD_PARTY_LICENSES file satisfies these requirements.
+
+---
+
+Last updated: February 1, 2026
