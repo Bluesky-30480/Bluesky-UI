@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Bluesky-UI/',
+  base: './',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
