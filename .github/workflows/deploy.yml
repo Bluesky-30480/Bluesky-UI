@@ -35,9 +35,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build component library
-        run: pnpm --filter @bluesky-ui/ui build
-
       - name: Build showcaser
         run: pnpm --filter showcaser build
 
