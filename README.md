@@ -1,6 +1,6 @@
 # Bluesky UI
 
-A modern React component library with 80+ components, built-in theming system, and effect support (glows, gradients, shadows).
+A modern React component library with 230+ components, built-in theming system, and effect support (glows, gradients, shadows).
 
 [![Deploy to GitHub Pages](https://github.com/Bluesky-30480/Bluesky-UI/actions/workflows/deploy.yml/badge.svg)](https://github.com/Bluesky-30480/Bluesky-UI/actions/workflows/deploy.yml)
 
@@ -10,7 +10,7 @@ A modern React component library with 80+ components, built-in theming system, a
 
 ## ✨ Features
 
-- **80+ Components** - Buttons, Cards, Forms, Data Display, Navigation, and more
+- **230+ Components** - Buttons, Cards, Forms, Data Display, Navigation, and more
 - **10 Built-in Themes** - 5 basic themes + 5 effect themes with glows and gradients
 - **Effect System** - Built-in support for glows, gradients, and enhanced shadows
 - **Runtime Theming** - Switch themes at runtime with smooth transitions

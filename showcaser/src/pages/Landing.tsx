@@ -43,7 +43,7 @@ const effectThemes: { name: ThemeName; label: string; color: string; gradient?: 
 const features = [
   {
     icon: Layers,
-    title: '80+ Components',
+    title: '230+ Components',
     description: 'From primitives to complex patterns - buttons, forms, modals, charts, and more.',
   },
   {
@@ -170,7 +170,7 @@ export function LandingPage() {
                 <span className="text-gradient">Bluesky UI</span>
               </BUI.Heading>
               <BUI.Text size="xl" color="muted" className="max-w-2xl">
-                A comprehensive, themeable component library with 80+ components,
+                A comprehensive, themeable component library with 230+ components,
                 advanced effects, and full TypeScript support.
               </BUI.Text>
             </BUI.VStack>
@@ -200,7 +200,7 @@ export function LandingPage() {
             {/* Stats */}
             <BUI.HStack spacing="xl" className="pt-8 flex-wrap justify-center">
               <BUI.VStack spacing="none" align="center">
-                <BUI.Text size="2xl" weight="bold" className="text-gradient">80+</BUI.Text>
+                <BUI.Text size="2xl" weight="bold" className="text-gradient">230+</BUI.Text>
                 <BUI.Text size="sm" color="muted">Components</BUI.Text>
               </BUI.VStack>
               <BUI.Divider orientation="vertical" className="h-12 hidden sm:block" />
