@@ -5,12 +5,12 @@ import { BlueskyUIProvider } from '@bluesky-ui/ui'
 import App from './App'
 import './styles/index.css'
 
-// Use basename for GitHub Pages deployment
-const basename = import.meta.env.BASE_URL
+// Use basename for GitHub Pages deployment (strip trailing slash)
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <BrowserRouter basename={basename || '/'}>
       <BlueskyUIProvider defaultTheme="blue">
         <App />
       </BlueskyUIProvider>
